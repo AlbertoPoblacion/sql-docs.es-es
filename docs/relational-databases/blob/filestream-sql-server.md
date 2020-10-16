@@ -62,7 +62,7 @@ Cuando use el almacenamiento FILESTREAM, piense en lo siguiente:
 
 ### <a name="integrated-management"></a>Administración integrada
 
-Debido a que FILESTREAM se implementa como columna **varbinary(max)** y se integra directamente en el [!INCLUDE[ssDE](../../includes/ssde-md.md)], la mayoría de las funciones y de las herramientas de administración de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] funcionan sin la modificación de los datos FILESTREAM. Por ejemplo, puede usar todos los modelos de recuperación y copia de seguridad con datos FILESTREAM y se realizan copias de seguridad de los datos FILESTREAM con los datos estructurados de la base de datos. Si no desea realizar una copia de seguridad de los datos FILESTREAM con datos relacionales, puede usar una copia de seguridad parcial para excluir los grupos de archivos FILESTREAM.  
+Debido a que FILESTREAM se implementa como columna **varbinary(max)** y se integra directamente en el [!INCLUDE[ssDE](../../includes/ssde-md.md)], la mayoría de las funciones y de las herramientas de administración de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] funcionan sobre los datos FILESTREAM sin ningunna modificación. Por ejemplo, puede usar todos los modelos de recuperación y copia de seguridad con datos FILESTREAM y se realizan copias de seguridad de los datos FILESTREAM con los datos estructurados de la base de datos. Si no desea realizar una copia de seguridad de los datos FILESTREAM con datos relacionales, puede usar una copia de seguridad parcial para excluir los grupos de archivos FILESTREAM.  
 
 ### <a name="integrated-security"></a>Seguridad integrada
 
@@ -149,9 +149,9 @@ El acceso del sistema de archivos remoto a los datos FILESTREAM está habilitado
 
 No se admite la creación de vistas asignadas de memoria (E/S asignada de memoria) usando un identificador FILESTREAM. Si la asignación de memoria se usa para los datos FILESTREAM, el [!INCLUDE[ssDE](../../includes/ssde-md.md)] no puede garantizar la coherencia y la durabilidad de los datos o la integridad de la base de datos.  
 
-## <a name="related-tasks"></a>Related Tasks
+## <a name="related-tasks"></a>Tareas relacionadas
 
-[Enable and Configure FILESTREAM](../../relational-databases/blob/enable-and-configure-filestream.md)  
+[Habilitar y configurar FILESTREAM](../../relational-databases/blob/enable-and-configure-filestream.md)  
 [crear una base de datos habilitada para FILESTREAM](../../relational-databases/blob/create-a-filestream-enabled-database.md)  
 [Crear una tabla para almacenar datos FILESTREAM](../../relational-databases/blob/create-a-table-for-storing-filestream-data.md)  
 [Obtener acceso a datos FILESTREAM con Transact-SQL](../../relational-databases/blob/access-filestream-data-with-transact-sql.md) [Crear aplicaciones cliente para datos FILESTREAM](../../relational-databases/blob/create-client-applications-for-filestream-data.md)  
